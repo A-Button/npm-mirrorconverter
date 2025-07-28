@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>镜像转换工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="md-bg"></div>
+    <main class="md-container">
+        <header class="md-header">
+            <span class="md-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#3f51b5"/><path d="M8 12h8M12 8v8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h1 class="md-title">镜像转换工具</h1>
+        </header>
+        <section class="md-card">
+            <p class="md-description">输入源地址url，换行或逗号隔开多个输入（如https://npmmirror.com/package/jquery/files/dist/jquery.js?version=3.7.1）</p>
+            <p><a href="https://npmmirror.com/" target="_blank">npm镜像地址</a></p>
+            <div class="md-field">
+                <label for="originalUrl" class="md-label">输入内容</label>
+                <textarea id="originalUrl" class="md-textarea" placeholder="请输入npm镜像URL..."></textarea>
+            </div>
+            <button id="convertBtn" class="md-btn">
+                <span class="md-btn-label">转换</span>
+            </button>
+            <div class="md-field">
+                <label for="convertedUrl" class="md-label">输出结果</label>
+                <textarea id="convertedUrl" class="md-textarea" readonly placeholder="输出结果将在此显示..."></textarea>
+            </div>
+        </section>
+    </main>
+    <script src="function.js"></script>
+    <footer class="md-footer">本项目由<a href="https://host.retiehe.com/" target="_blank">热铁盒网页托管</a>强力驱动</footer>
+</body>
+</html>
